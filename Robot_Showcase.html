@@ -6,7 +6,7 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 
-<body style="background-color:#0F0506;">
+<body style="background-color:#0F0506; margin:0; padding: 0; height:100vh;">
 <div class="meniu">
 			<div class="logo">
 				<a href="index.html">
@@ -35,28 +35,28 @@
 			</div>
 		</div>
 <div class="poza_robot">
-	<img src="imagini/Robot_Showcase/robot_img.PNG" style="width: 40%; height: auto; margin-left: 30%; margin-right: 30%;">
+	<img src="imagini/Robot_Showcase/robot_img2.PNG" style="width: 40%; height: auto; margin-left: 30%; margin-right: 30%;">
 </div>
 <div class="mecanisme">
-	<button type="button" id="buton1" onclick="mecanism(1)" style="background-color: #260101; border:none; width: 20%; border-radius: 25px;"> <img src="imagini/Robot_Showcase/spindexer.PNG"></button>
-	<button type="button" id="buton2" onclick="mecanism(2)" style="background-color: #260101; border:none; width: 20%; border-radius: 25px;"> <img src="imagini/Robot_Showcase/intake.PNG"></button>
-	<button type="button" id="buton3" onclick="mecanism(3)" style="background-color: #260101; border:none; width: 20%; border-radius: 25px;"> <img src="imagini/Robot_Showcase/shoot.PNG"></button>
-	<button type="button" id="buton4" onclick="mecanism(4)" style="background-color: #260101; border:none; width: 20%; border-radius: 25px;"> <img src="imagini/Robot_Showcase/idk.PNG"></button>
+	<button type="button" id="buton1" onclick="mecanism(1)" style="background-color: #260101; border:none; width: 24%; border-radius: 25px;"> <img src="imagini/Robot_Showcase/jSTORAGE.png"></button>
+	<button type="button" id="buton2" onclick="mecanism(2)" style="background-color: #260101; border:none; width: 24%; border-radius: 25px;"> <img src="imagini/Robot_Showcase/jSHOOTER.PNG"></button>
+	<button type="button" id="buton3" onclick="mecanism(3)" style="background-color: #260101; border:none; width: 24%; border-radius: 25px;"> <img src="imagini/Robot_Showcase/jPTO.png"></button>
 </div>
 <div class="descriere_mecanism">
-	<img id="Mecanism_descris" src="imagini/Robot_Showcase/spindexer.PNG">
+	<img id="Mecanism_descris" src="imagini/Robot_Showcase/jSTORAGE.png">
 	<div class="text_mecanism"><i>
-		<div id="Nume_mecanism" style="margin-bottom: 5px;">Spindexer</div>
-		<p id="p1">Spindexer – performs the rotation of the balls in the storage and their sorting, being driven by two servo motors connected to the central shaft through three bevel gears.</p>
+		<div id="Nume_mecanism" style="margin-bottom: 5px;">Storage</div>
+		<p id="p1">➤  The mechanism allows artifacts to be positioned in storage in three predetermined positions in order to sort them.</p>
+		<p id="p2">➤  It ensures their sorting through three color sensors, which transmit information to three latches, deciding which artifact to release.</p>
+		<p id="p3">➤  It is powered by three servo motors for speed and precision.</p>
+		<p id="p4"></p>
 		</i></div>
 </div>
 <div class="Contact_Us">
 	<div class="Title">
 		Contact Us
 	</div>
-	<p><a href="mailto:contact@peppers-robotics.ro">contact@peppers-robotics.ro</a>	
-		<a href="mailto:pr.peppers.ftc@gmail.com">pr.peppers.ftc@gmail.com</a>
-		<a href="tel:+40747796166" id="Nr_tel">0747 796 166</a></p>
+	<p><a href="mailto:contact@peppers-robotics.ro">contact@peppers-robotics.ro</a>	</p>
 	<p><a href="https://www.facebook.com/cyliispepp/"><img src="imagini/Facebook.png" style="border-radius: 25px;"></a>
 	   <a href="https://www.youtube.com/channel/UCVYz7F24B_fS2NyifAHLp7w/videos"><img src="imagini/Youtube.png"></a>
 	   <a href="https://www.instagram.com/cyliispepp/"><img src="imagini/Instagram.png"></a>
@@ -69,30 +69,36 @@
 		var desc;
 		var title;
 		if(n==1){
-			pic="imagini/Robot_Showcase/spindexer.PNG";
-			title="Spindexer";
-			desc="Spindexer – performs the rotation of the balls in the storage and their sorting, being driven by two servo motors connected to the central shaft through three bevel gears.";
+			pic="imagini/Robot_Showcase/jSTORAGE.PNG";
+			title="Storage";
+			desc1="➤  The mechanism allows artifacts to be positioned in storage in three predetermined positions in order to sort them.";
+			desc2="➤  It ensures their sorting through three color sensors, which transmit information to three latches, deciding which artifact to release.";
+			desc3="➤  It is powered by three servo motors for speed and precision.";
+			desc4="";
 		}
 		else if(n==2)
 		{
-			pic="imagini/Robot_Showcase/intake.PNG";
-			title="Intake";
-			desc="Intake – Thanks to the 1000 rpm motor, our intake collects balls using silicone rollers and mecanum wheels that guide the ball toward the intake opening, after which they are pushed further by silicone tubes."
+			pic="imagini/Robot_Showcase/jSHOOTER.PNG";
+			title="Shooter";
+			desc1="➤ Two 6000 RPM motors provide high speed and a quick return to the optimal rotation speed.";
+			desc2="➤ The artifacts are compressed 7 mm between the back wall and the rigid silicone wheels to ensure a consistent launch.";
+			desc3="➤ At the back, a servo controls the pitch, adjusting the throwing angle.";
+			desc4="➤ This adjustment allows efficient launching from both the far zone and the near zone.";
 		}
 		else if(n==3)
 		{
-			pic="imagini/Robot_Showcase/shoot.PNG";
-			title="Shooter";
-			desc="Shooter – It is driven by two 6000 rpm motors to provide sufficient speed and to quickly return to the optimal rpm for launching the balls, which are compressed by 10 mm between the back wall and the rigid wheels coated with a layer of silicone. At the rear, we have a pitch mechanism controlled by a servo motor that changes the ball’s trajectory (throwing angle), allowing us to shoot from both the far zone and the near zone."
-		}
-		else if(n==4)
-		{
-			pic="imagini/Robot_Showcase/idk.PNG";
-			title="Spindexer";
-			desc="Spindexer – performs the rotation of the balls in the storage and their sorting, driven by two servo motors connected to the central shaft via three bevel gears."
+			pic="imagini/Robot_Showcase/jPTO.PNG";
+			title="Power Take-Off";
+			desc1="➤ A PTO (Power Take-Off) mechanism that couples two motors from the chassis with the string spool to increase lifting power.";
+			desc2="➤ Two sets of side-mounted sliders with bearing inserts create a pulley mechanism.";
+			desc3="➤ The belly plate remains on the field, supporting the sliders.";
+			desc4="";
 		}
 		document.getElementById('Mecanism_descris').src=pic;
-		document.getElementById('p1').innerHTML=desc;
+		document.getElementById('p1').innerHTML=desc1;
+		document.getElementById('p2').innerHTML=desc2;
+		document.getElementById('p3').innerHTML=desc3;
+		document.getElementById('p4').innerHTML=desc4;
 		document.getElementById('Nume_mecanism').innerHTML=title;
 	}
 </script>
