@@ -1,3 +1,9 @@
+body {
+    font-size: 1.20vw;
+}
+ul{
+    font-size: 1.50vw;
+}
 a:link {
   color: #E52D39;
 }
@@ -81,9 +87,18 @@ a:active {
     column-gap: 2.5%;
 }
 .Title{
-    font-size: 50px;
+    font-size: 2.5vw;
     font-weight: bold;
     word-spacing: 5px;
+}
+.Subtitle{
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-bottom: 23px;
+
+}
+.description{
+    font-size: 1.20vw;
 }
 .blue{
     text-decoration: underline;
@@ -129,9 +144,8 @@ a:active {
     text-align:center;
     color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 2.7vw;
     font-weight: bold;
-    margin-bottom: 200px;
 }
 .row-1{
     margin-top: 30px;
@@ -261,9 +275,4 @@ overflow: hidden;
     margin-left: 27%;
     margin-right: 27%;
 }
-.Subtitle{
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 23px;
 
-}
